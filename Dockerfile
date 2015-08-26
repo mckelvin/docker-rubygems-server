@@ -1,4 +1,4 @@
-FROM ruby:2.1.5
+FROM ruby:2.2.3
 MAINTAINER Chris Olstrom <chris@olstrom.com>
 
 VOLUME /data/rubygems
