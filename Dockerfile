@@ -5,7 +5,7 @@ VOLUME /srv/gems
 EXPOSE 9292
 
 COPY .mirrorrc /root/.gem/
-COPY config.ru /root/.gem/mirror/
+COPY config.ru Gemfile /root/.gem/mirror/
 WORKDIR /root/.gem/mirror
 
 CMD ["rackup", "--host", "0.0.0.0"]
