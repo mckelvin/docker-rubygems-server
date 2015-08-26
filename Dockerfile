@@ -1,7 +1,7 @@
 FROM ruby:2.2.3
 MAINTAINER Chris Olstrom <chris@olstrom.com>
 
-VOLUME /data/rubygems
+VOLUME /srv/gems
 EXPOSE 9292
 
 RUN apt-get update && apt-get install -y nginx
