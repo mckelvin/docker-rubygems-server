@@ -7,5 +7,6 @@ EXPOSE 9292
 COPY .mirrorrc /root/.gem/
 COPY config.ru Gemfile /srv/app/
 WORKDIR /srv/app
+RUN bundle pack
 
 CMD ["rackup", "--host", "0.0.0.0"]
