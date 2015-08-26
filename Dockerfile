@@ -1,5 +1,5 @@
 FROM ruby:2.1.5
-MAINTAINER mookjp<mookjpy@gmail.com>
+MAINTAINER Chris Olstrom <chris@olstrom.com>
 
 VOLUME /data/rubygems
 EXPOSE 9292
