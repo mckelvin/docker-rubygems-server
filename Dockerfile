@@ -4,8 +4,6 @@ MAINTAINER Chris Olstrom <chris@olstrom.com>
 VOLUME /srv/gems
 EXPOSE 9292
 
-RUN apt-get update && apt-get install -y nginx
-
 ADD .mirrorrc /root/.gem/.mirrorrc
 ADD config.ru /root/.gem/mirror/config.ru
 WORKDIR /root/.gem/mirror
