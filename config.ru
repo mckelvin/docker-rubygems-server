@@ -1,5 +1,5 @@
-require "rubygems"
-require "geminabox"
+require 'rubygems'
+require 'geminabox'
 
-Geminabox.data = "/data/rubygems"
+Geminabox.data = '/data/rubygems'
 run Geminabox::Server
