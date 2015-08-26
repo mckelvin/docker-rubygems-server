@@ -5,7 +5,7 @@ Description
 
 Docker image providing [rubygems-mirror](https://github.com/rubygems/rubygems-mirror) and a [gem server](https://github.com/geminabox/geminabox).
 
-* [Docker Hub Repository](https://hub.docker.com/r/colstrom/docker-rubygems-server/builds/)
+* [Docker Hub Repository](https://hub.docker.com/r/colstrom/rubygems-server/builds/)
 
 Deploying your Gem Server
 -------------------------
