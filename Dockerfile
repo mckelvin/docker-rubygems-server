@@ -6,6 +6,7 @@ EXPOSE 3000
 
 COPY .mirrorrc /root/.gem/
 COPY config.ru Gemfile /srv/app/
+COPY lib/ /srv/app/lib/
 WORKDIR /srv/app
 RUN bundle pack
 
