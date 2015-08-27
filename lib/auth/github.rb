@@ -1,4 +1,5 @@
 require 'octokit'
+require_relative 'cache'
 
 module Auth
   # Module for using GitHub authorization.
