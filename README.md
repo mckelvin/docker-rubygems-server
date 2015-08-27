@@ -35,6 +35,17 @@ bundle config mirror.http://rubygems.org http://0.0.0.0:9292
 gem sources --add http://0.0.0.0:9292
 ```
 
+Authenticating with GitHub
+--------------------------
+
+To restrict access to your Gem Server, you can set two environment variables:
+* `GITHUB_ORGANIZATION` to the organization you want to restrict access to.
+* `GITHUB_AUTH_ENABLED` to enable authentication.
+
+With these in place, the Gem Server will require a valid GitHub token with `org` permissions, provided as a 'password' via HTTP Basic Auth.
+
+If the user associated with the token is a member of the `GITHUB_ORGANIZATION` you set, that user will have access.
+
 License
 -------
 [MIT](https://tldrlegal.com/license/mit-license)
