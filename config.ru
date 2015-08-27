@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'geminabox'
+require 'tilt/erb'
 
 Geminabox.data = '/srv/gems'
 Geminabox.rubygems_proxy = true # Allow pulling gems from another gem source.
