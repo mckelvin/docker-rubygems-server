@@ -1,4 +1,4 @@
 ---
 - from: https://rubygems.org
-  to: /data/rubygems
+  to: /srv/gems
   parallelism: 10
