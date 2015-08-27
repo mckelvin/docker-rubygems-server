@@ -4,7 +4,7 @@ MAINTAINER Chris Olstrom <chris@olstrom.com>
 VOLUME /srv/gems
 EXPOSE 3000
 
-COPY .mirrorrc /root/.gem/
+COPY .gem/.mirrorrc /root/.gem/
 COPY config.ru Gemfile /srv/app/
 COPY lib/ /srv/app/lib/
 WORKDIR /srv/app
