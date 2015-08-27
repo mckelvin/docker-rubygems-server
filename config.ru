@@ -10,6 +10,6 @@ Geminabox.allow_remote_failure = true # Serve gems if upstream source is down.
 
 use Rack::Auth::Basic do |_, token|
   Auth::Cache.authorized?(token) || Auth::GitHub.authorized?(token)
-end if ENV['GITHUB_AUTH_ENABLED']
+end if ENV['GITHUB_ORGANIZATION']
 
 run Geminabox::Server
