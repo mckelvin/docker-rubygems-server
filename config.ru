@@ -2,7 +2,7 @@ require 'rubygems'
 require 'geminabox'
 require 'tilt/erb'
 
-require_relative 'lib/auth/github'
+require_relative 'lib/auth'
 
 Geminabox.data = '/srv/gems'
 Geminabox.rubygems_proxy = true # Allow pulling gems from another gem source.
