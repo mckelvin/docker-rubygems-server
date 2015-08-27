@@ -4,8 +4,12 @@ require 'securerandom'
 module Auth
   # Caching methods for sessions.
   module Cache
+    def self.redis_url
+      @redis_host ||= ENV['REDIS_URL'] || ENV.fetch('REDIS_PORT', 'tcp://127.0.0.1:6379').sub('tcp://', 'redis://')
+    end
+
     def self.redis
-      @redis ||= Redis.new
+      @redis ||= Redis.new(url: redis_url)
     end
 
     def self.seed
