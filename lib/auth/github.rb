@@ -23,7 +23,9 @@ module Auth
     end
 
     def self.authorized?(access_token)
-      in_organization?(access_token)
+      in_organization?(access_token).tap do |allowed|
+        Auth::Cache.add access_token if allowed
+      end
     rescue Octokit::Unauthorized
       false
     end
