@@ -1,7 +1,8 @@
 FROM ruby:2.2.3
 MAINTAINER Chris Olstrom <chris@olstrom.com>
 
-VOLUME /srv/gems
+ENV RUBYGEMS_STORAGE /srv/gems
+VOLUME ${RUBYGEMS_STORAGE}
 EXPOSE 3000
 
 COPY config.ru Gemfile /srv/app/
