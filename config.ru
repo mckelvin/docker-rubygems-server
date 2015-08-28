@@ -4,7 +4,7 @@ require 'tilt/erb'
 
 require_relative 'lib/auth'
 
-Geminabox.data = ENV['RUBYGEMS_STORAGE'] if ENV['RUBYGEMS_STORAGE']
+Geminabox.data = ENV.fetch 'RUBYGEMS_STORAGE', "#{__dir__}/data"
 Geminabox.rubygems_proxy = true # Allow pulling gems from another gem source.
 Geminabox.allow_remote_failure = true # Serve gems if upstream source is down.
 
