@@ -1,3 +1,4 @@
+require 'openssl'
 require 'redis'
 require 'securerandom'
 
