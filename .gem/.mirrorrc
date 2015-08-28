@@ -1,4 +1,0 @@
----
-- from: https://rubygems.org
-  to: /srv/gems
-  parallelism: 10
