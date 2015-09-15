@@ -1,5 +1,7 @@
 # docker-rubygems-server
 
+[![](https://badge.imagelayers.io/colstrom/rubygems-server:latest.svg)](https://imagelayers.io/?images=colstrom/rubygems-server:latest)
+
 Description
 -----------
 
